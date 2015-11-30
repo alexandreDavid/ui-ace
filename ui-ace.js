@@ -49,6 +49,9 @@ angular.module('ui.ace', [])
       if (angular.isDefined(opts.useWrapMode)) {
         session.setUseWrapMode(opts.useWrapMode);
       }
+      if (angular.isDefined(opts.useWorker)) {
+          session.setUseWorker(opts.useWorker);
+      }
       if (angular.isDefined(opts.showInvisibles)) {
         acee.renderer.setShowInvisibles(opts.showInvisibles);
       }
